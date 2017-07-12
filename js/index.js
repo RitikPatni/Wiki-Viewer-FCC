@@ -13,7 +13,7 @@ function search() {
     headers: {
       'Api-User-Agent': 'Example/1.0'
     },
-    success: function(data) {
+    success: function (data) {
       $('.results').empty();
       arrResults.length = 0;
       var resArr = data.query.search;
@@ -24,12 +24,12 @@ function search() {
       }
     }
   });
-    $('#search').unbind('keyup');
-  $('#search').keyup(function() {
+  $('#search').unbind('keyup');
+  $('#search').keyup(function () {
     search();
   });
 }
 
-$('#search').keyup(function() {
+$('#search').keyup(function () {
   search();
 });
