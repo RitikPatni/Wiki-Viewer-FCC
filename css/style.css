@@ -20,10 +20,10 @@ h3 {
 }
 
 img {
-    width: auto;
-}
-
-img {
     width: 100px;
     height: 100px;
+}
+
+.search:hover {
+    cursor: pointer;
 }
